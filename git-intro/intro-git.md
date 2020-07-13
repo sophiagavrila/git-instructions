@@ -123,11 +123,11 @@ So far we have initialized a local repository to track changes made to our sourc
 
 3. Title your repository.  Do not initialize it with a README. Click `Create repository`.
 
-<img src="./images/new-repo-2.png" width="700"/>
+<img src="./images/new-repo-2.png" width="400"/>
 
 4. Since we will be pushing the existing local repository from the command line using the `git remote add origin` command, click the clipboard icon next to the third option, as highlighted below.
 
-<img src="./images/new-repo-3.png" width="800"/>
+<img src="./images/new-repo-3.png" width="500"/>
 
 5. Git Bash within your `MyApp` folder and paste the copied commands:
 
@@ -148,7 +148,59 @@ $ git push
 
 The `git pull` command is used to fetch and download content from a remote repository and immediately update the local repository to match that content, **before** you push your changes.
 
-### References
 
-* [Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet.pdf)
-* [Git Pro eBook](https://git-scm.com/book/en/v2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Cloning a Remote Repository
+Let's say for example that the company you work for has a repository on GitHub.  In order to work on this project on your own computer, you must **clone** the remote repository. Considering that you are a contributor, you will be able to make changes on the local version of the project that you clone from the remote repository, and then modify the master branch.
+
+1. Navigate to the GitHub repository on your browser.  Click on the green <span style="color: green;">**Code**</span> button.  Click the `copy-to-clipboard` button or copy the web URL.
+
+<img src="./images/clone-1.png" width="500"/>
+
+2. Open GitBash. `cd` into the directory where you want to clone the repo.
+3. Run the command: `git clone <url>`
+
+For example, if you wanted to clone the `hello-git-demo` to a folder on your Desktop titled `MyWorkProjects`, it would look like this:
+
+<img src="./images/clone-2.png" width="500"/>
+
+### Useful `git` commands
+`git remote -v` will tell you information about your connection to the remote repository.
+
+`git branch -a` will tell you what branch you're currently working on.
+
+
+## Pushing Changes to GitHub
+So far we've created a local repo using `git init` which is where changes to your `MyApp` project are being tracked.  Let's push these local changes onto the remote "work" repository hosted on GitHub called `hello-git-demo`.
+
+1. Copy the web URL to the repo.
+
+<img src="./images/clone-3.png" width="300"/>
+
+2. Git Bash into the directory that holds the `.git` file of your `MyApp` project.
+3. Run the commmand: `git remote add origin <url>`
+4.  
